@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9fc15"
+    >
+
+    <TextView
+        android:text="Driver Information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#1a1a1a"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        style="@style/Hyperlink"
+        android:layout_marginLeft="40px"
+        android:layout_marginBottom="5px"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        app:srcCompat="@drawable/circle"
+        android:id="@+id/imageView2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="95px"
+        android:inputType="textPersonName"
+        android:text="Vu Ba Anh Nguyen"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/editText" />
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:inputType="textPersonName"
+    android:text="FPT University Student"
+    android:textSize="18sp"
+
+    android:gravity="center"
+    android:ems="10"
+    android:id="@+id/editText2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginBottom="5px">
+
+        <ImageView
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/mail"
+            android:id="@+id/imageView8"
+            android:layout_marginLeft="110px"/>
+
+        <ImageView
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/sms"
+            android:id="@+id/imageView7" />
+
+        <ImageView
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/phone"
+            android:id="@+id/imageView6"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2e2e1f">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/rate"
+            android:id="@+id/imageView9"
+            android:layout_marginTop="5px"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Booking Success!"
+            android:textColor="#f9fc15"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:ems="10"
+            android:id="@+id/editText3" />
+
+        <Button
+            android:text="Button"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#f9fc15"
+            android:id="@+id/button" />
+    </LinearLayout>
+
+
+</LinearLayout>

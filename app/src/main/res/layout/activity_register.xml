@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nguyenvba.design.RegisterActivity"
+    android:weightSum="1"
+    android:background="#fdfeec"
+    android:orientation="vertical">
+
+    // can chinh kich co, mau sac
+
+    //thêm title Signup và logo
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f9fc15">
+
+            <TextView
+                android:text="SignUp Now!"
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/textView3"
+                android:textStyle="normal|bold"
+                android:textSize="30sp"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="52dp" />
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/holabike"
+                android:id="@+id/imageView3"
+                android:layout_marginRight="40dp"
+                android:cropToPadding="false"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="90dp" />
+        </LinearLayout>
+
+    </TableRow>
+
+    //text field nhập tên
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:backgroundTint="@android:color/background_dark"
+                android:hint="First name"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etFirstname"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:backgroundTint="@android:color/background_dark"
+                android:hint="Last name"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etLastname"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+    </TableRow>
+
+    //text field nhập email
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/background_dark"
+        android:hint="Email"
+        android:ems="20"
+        android:id="@+id/etEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    //text field nhập pass
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/background_dark"
+        android:hint="Password"
+        android:ems="20"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/etPassword" />
+
+    //text field nhập lại pass
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/background_dark"
+        android:hint="Re-write password"
+        android:ems="20"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/etRepassword" />
+
+    //text field nhập sdt
+    <EditText
+        
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:textSize="16sp"
+        android:backgroundTint="@android:color/background_dark"
+        android:hint="Phone number"
+        android:ems="20"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/etPhone" />
+
+    //text field nhập biển số xe
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="46dp"-->
+        <!--android:textSize="16sp"-->
+        <!--android:backgroundTint="@android:color/background_dark"-->
+        <!--android:hint="License plate"-->
+        <!--android:ems="20"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:id="@+id/License_plate" />-->
+
+    <!--//text field nhập CMND-->
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="46dp"-->
+        <!--android:textSize="16sp"-->
+        <!--android:backgroundTint="@android:color/background_dark"-->
+        <!--android:hint="Driver's license number"-->
+        <!--android:ems="20"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:id="@+id/License_number" />-->
+
+    //link đến điều khoản, điều kiện sử dụng
+    <TextView
+        android:text="Terms and conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:gravity="center"
+        android:textSize="16sp"
+        style="@style/Hyperlink"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"/>
+
+    //button gửi thông tin
+    <Button
+        android:text="Agree and Continue"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:id="@+id/btnRegister"
+        android:textColor="#f9fc15"
+        android:background="#262626"
+        android:textStyle="bold"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="35px"
+        android:layout_weight="0.18" />
+
+</LinearLayout>
